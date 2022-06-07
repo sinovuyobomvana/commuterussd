@@ -27,7 +27,7 @@ if ($text == "") {
      $response .= "0. Back\n";
     // This is a terminal request. Note how we start the response with END
   //  $response = "END Your account number is ".$accountNumber;
-} else if($text == "1*1*1") { 
+} else if($text == "1*1*2") { 
     // This is a second level response where the user selected 1 in the first instance
 
      $response .= "Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE!
