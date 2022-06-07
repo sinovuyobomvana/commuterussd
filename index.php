@@ -17,7 +17,7 @@ if ($text == "") {
     // Business logic for first level response
     $response = "CON To pay for your trip please enter the taxi code:\n\n";
     $response .= "0. Back";
-    $code = $text;
+    // $code = $text;
     
 } else if($text == "1*1") { 
     // This is a second level response where the user selected 1 in the first instance
