@@ -4,6 +4,7 @@ $sessionId   = $_POST["sessionId"];
 $serviceCode = $_POST["serviceCode"];
 $phoneNumber = $_POST["phoneNumber"];
 $text        = $_POST["text"];
+$code        = $_POST["code"];
 
 if ($text == "") {
     // This is the first request. Note how we start the response with CON
@@ -16,10 +17,10 @@ if ($text == "") {
     // Business logic for first level response
     $response = "CON To pay for your trip please enter the taxi code:\n\n";
     $response .= "0. Back";
-    $Code = $text;
-} else if($text == "1*1") { 
+    $code = $text;
+} else if($text == "1*1" || $code == $text) { 
     // This is a second level response where the user selected 1 in the first instance
-     $response = "CON : You have selected ". $Code. " as your taxi from Njoli to Greenacres.\n
+     $response = "CON You have selected ". $code. " as your taxi from Njoli to Greenacres.\n
      Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
      $response .= "1. Confirm\n";
      $response .= "0. Back\n";
