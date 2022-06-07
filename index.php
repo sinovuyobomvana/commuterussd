@@ -8,7 +8,7 @@ $code        = $_POST["code"];
 
 if ($text == "") {
     // This is the first request. Note how we start the response with CON
-    $response  = "CON Welcome to the TBC service. Your balance is R37.50\n
+    $response  = "CON Welcome to the TBC service. Your balance is R37.50
     Select your action from the menu below:\n\n";
     $response .= "1. Pay for a trip\n";
     $response .= "2. View payment history\n";
@@ -27,13 +27,25 @@ if ($text == "") {
      $response .= "0. Back\n";
     // This is a terminal request. Note how we start the response with END
   //  $response = "END Your account number is ".$accountNumber;
-} else if($text == "1*1*2") { 
+} else if($text == "1*1*1") { 
     // This is a second level response where the user selected 1 in the first instance
 
      $response .= "Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE!
                     Visit your nearest SHOPRITE store and ENTER!";
 
+}else if($text == "1*1*1*2") {
+    $response = "CON Paid commuters\n";
+     $response .= "1. Kelly\n";
+     $response .= "2. Aviwe\n";
+     $response .= "3. Chim\n";
+     $response .= "4. Sandile\n";
+     $response .= "5. More\n";
 }
+else if($text == "1*1*1*1") {
+   // $response = "CON Paid commuters\n";
+      $response = "END You have successfully ended your TBC trip!";
+}
+
 
 // Echo the response back to the API
 header('Content-type: text/plain');
