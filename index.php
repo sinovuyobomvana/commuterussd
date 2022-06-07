@@ -30,7 +30,7 @@ if ($text == "") {
 } else if($text == "1*1*1") { 
     // This is a second level response where the user selected 1 in the first instance
 
-     $response .= "Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE!
+     $response .= "CON Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE!
                     Visit your nearest SHOPRITE store and ENTER!";
 
 }else if($text == "1*1*1*2") {
