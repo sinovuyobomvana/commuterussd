@@ -34,18 +34,6 @@ if ($text == "") {
                     Visit your nearest SHOPRITE store and ENTER!";
 
  }
-// else if($text == "1*1*1*2") {
-//     $response = "CON Paid commuters\n";
-//      $response .= "1. Kelly\n";
-//      $response .= "2. Aviwe\n";
-//      $response .= "3. Chim\n";
-//      $response .= "4. Sandile\n";
-//      $response .= "5. More\n";
-// }
-// else if($text == "1*1*1*1") {
-//    // $response = "CON Paid commuters\n";
-//       $response = "END You have successfully ended your TBC trip!";
-// }
 
 
 // Echo the response back to the API
