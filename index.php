@@ -19,7 +19,7 @@ if ($text == "") {
     $response .= "0. Back";
     $code = $text;
     
-} else if($text == "1*1" || $code == $text) { 
+} else if($text == "1*1") { 
     // This is a second level response where the user selected 1 in the first instance
      $response = "CON You have selected ".$code." as your taxi from Njoli to Greenacres.
      Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
