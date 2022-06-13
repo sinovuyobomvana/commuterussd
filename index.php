@@ -34,10 +34,7 @@ if ($text == "") {
      $response .= "END Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE! Visit your nearest SHOPRITE store and ENTER!";
 
  }
- else 
- {
-    $response = "END Network issue, please try again later!"
- }
+
 
 
 // Echo the response back to the API
