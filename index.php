@@ -18,6 +18,11 @@ if ($text == "") {
     $response = "CON To pay for your trip please enter the taxi code:\n\n";
     $response .= "1. CY359186\n";
     $response .= "0. Back";
+
+    if($text !== "")
+    {
+        $response = "CON this is your code";
+    }
     // $code = $text;
     
 } else if($text == "1*1") { 
@@ -33,10 +38,6 @@ if ($text == "") {
 
      $response .= "END Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE! Visit your nearest SHOPRITE store and ENTER!";
 
- }
- else 
- {
-    $response = "END Network issue, please try again later!"
  }
 
 
