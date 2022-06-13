@@ -19,7 +19,7 @@ if ($text == "") {
     $response .= "1. CY359186\n";
     $response .= "0. Back";
 
-    if($text !== "" && )
+    if($text !== "")
     {
         $response = "CON this is your code".$text;
     }
