@@ -36,7 +36,7 @@ if ($text == "") {
  }
  else 
  {
-    $response = "END Network issue, please try again later"
+    $response = "END Network issue, please try again later!"
  }
 
 
