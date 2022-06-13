@@ -13,10 +13,18 @@ if ($text == "") {
     $response .= "1. Pay for a trip\n";
     $response .= "2. View payment history\n";
     $response .= "3. Top up wallet";
+
+    if ($text == "1") {
+            // Business logic for first level response
+            $response = "CON To pay for your trip please enter the taxi code:\n\n";
+            $response .= "1. CY359186\n";
+            $response .= "0. Back";
+    }
+    else {
+        $response = "Network issue, please try again later";
+      }
   }
-  else {
-    $response = "Network issue, please try again later";
-  }
+ 
 
 //else if ($text == "1") {
 //     // Business logic for first level response
