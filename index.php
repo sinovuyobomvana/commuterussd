@@ -20,9 +20,9 @@ if ($text == "") {
             $response .= "1. CY359186\n";
             $response .= "0. Back";
     }
-    else {
-        $response = "Network issue, please try again later";
-      }
+    // else {
+    //     $response = "Network issue, please try again later";
+    //   }
   }
  
 
