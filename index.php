@@ -19,12 +19,19 @@ switch ($text) {
             $response .= "2. View payment history\n";
             $response .= "3. Top up wallet";
         } 
+        break;
+    case '1':
         if ($text == "1") {
             // Business logic for first level response
             $response = "CON To pay for your trip please enter the taxi code:\n\n";
             $response .= "0. Back";
             
         } 
+        break;
+        
+    case 'value':
+        # code...
+        break;
         if($userResponse == "XYZ123")
         {
             $response = "CON You have selected ".$userResponse." as your taxi from Njoli to Greenacres.
