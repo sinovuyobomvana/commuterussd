@@ -5,9 +5,10 @@ $serviceCode = $_POST["serviceCode"];
 $phoneNumber = $_POST["phoneNumber"];
 $text        = $_POST["text"];
 
-//3. Explode the text to get the value of the latest interaction - think 1*1
+// Explode the text to get the value of the latest interaction - think 1*1
 $textArray=explode('*', $text);
 $userResponse=trim(end($textArray));
+
 
 switch ($text) {
     case '':
@@ -27,33 +28,29 @@ switch ($text) {
             $response .= "0. Back";
             
         } 
-        break;
-    default:
-        $response .= "END Network Issue, please try again later!";
-        break;
-        
+        break;       
     }
     
 
     switch ($userResponse) {
         case 'XYZ123':
-            if($userResponse == "XYZ123")
-        {
-            $response = "CON You have selected ".$userResponse." as your taxi from Njoli to Greenacres.
-            Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
-            $response .= "1. Confirm\n";
-            $response .= "0. Back\n";
-             
-        } 
+          if($userResponse == "XYZ123"){    
+            
+                $response = "CON You have selected ".$userResponse." as your taxi from Njoli to Greenacres.
+                Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
+                $response .= "1. Confirm\n";
+                $response .= "0. Back\n";       
+           } 
             break;
         // default:
         //     $response .= "END Network Issue, please try again later!";
         //     break;
     }
+
     switch ($text) {
         case '1*XYZ123*1':
             if($text == "1*XYZ123*1") { 
-        
+
                $response .= "END Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE! Visit your nearest SHOPRITE store and ENTER!";
             } 
             break;
@@ -62,13 +59,7 @@ switch ($text) {
         //  $response .= "END Network Issue, please try again later!";
         //  break;
     }
-      
-
-       
     
-
-
-
 
 // Echo the response back to the API
 header('Content-type: text/plain');
