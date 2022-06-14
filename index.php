@@ -51,7 +51,7 @@ switch ($text) {
         //     break;
     }
     switch ($text) {
-        case 'value':
+        case '1*XYZ123*1':
             if($text == "1*XYZ123*1") { 
         
                $response .= "END Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE! Visit your nearest SHOPRITE store and ENTER!";
