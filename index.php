@@ -20,7 +20,6 @@ if ($text == "") {
 } else if ($text == "1") {
     // Business logic for first level response
     $response = "CON To pay for your trip please enter the taxi code:\n\n";
-    $response .= "1. CY359186\n";
     $response .= "0. Back";
     
 } 
@@ -36,13 +35,6 @@ if($text == "1*XYZ123*1") {
 
      $response .= "END Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE! Visit your nearest SHOPRITE store and ENTER!";
 } 
-
-//else if($text == "1*1*1") { 
-//     // This is a second level response where the user selected 1 in the first instance
-
-//      $response .= "END Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE! Visit your nearest SHOPRITE store and ENTER!";
-
-//  }
 
 
 // Echo the response back to the API
