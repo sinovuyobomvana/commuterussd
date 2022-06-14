@@ -4,7 +4,6 @@ $sessionId   = $_POST["sessionId"];
 $serviceCode = $_POST["serviceCode"];
 $phoneNumber = $_POST["phoneNumber"];
 $text        = $_POST["text"];
-$level       = $_POST["level"];
 
 //3. Explode the text to get the value of the latest interaction - think 1*1
 $textArray=explode('*', $text);
@@ -32,10 +31,10 @@ if($userResponse == "XYZ123")
     $response .= "1. Confirm\n";
     $response .= "0. Back\n";
      
-    $level = "1";
+    
 
 } 
-if("1*XYZ123*1") { 
+if("1*".$userResponse."*1") { 
     // This is a second level response where the user selected 1 in the first instance
      $response = "CON You have selected 123456 as your taxi from Njoli to Greenacres.
      Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
