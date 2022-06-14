@@ -42,7 +42,7 @@ switch ($text) {
                 $response = "CON You have selected ".$userResponse." as your taxi from Njoli to Greenacres.
                 Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
                 $response .= "1. Confirm\n";
-                $response .= "0. Back\n".$step;       
+                $response .= "0. Back\n";       
            } 
             break;
         // default:
@@ -54,7 +54,7 @@ switch ($text) {
         case '1*XYZ123*1':
             if($text == "1*XYZ123*1") { 
 
-               $response .= "END Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE! Visit your nearest SHOPRITE store and ENTER!";
+               $response .= "END Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE! Visit your nearest SHOPRITE store and ENTER!".$step;
             } 
             break;
         
