@@ -4,7 +4,7 @@ $sessionId   = $_POST["sessionId"];
 $serviceCode = $_POST["serviceCode"];
 $phoneNumber = $_POST["phoneNumber"];
 $text        = $_POST["text"];
-$level       = $POST["level"];
+$level       = $_POST["level"];
 
 //3. Explode the text to get the value of the latest interaction - think 1*1
 $textArray=explode('*', $text);
