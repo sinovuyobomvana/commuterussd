@@ -33,9 +33,10 @@ if($userResponse == "XYZ123")
      
     
 
-} else if("2*".$userResponse."*1") { 
+} 
+if($text == "1*XYZ123*1") { 
     // This is a second level response where the user selected 1 in the first instance
-     $response = "END You have selected 123456 as your taxi from Njoli to Greenacres.
+     $response = "CON You have selected 123456 as your taxi from Njoli to Greenacres.
      Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
      $response .= "1. Confirm\n";
      $response .= "0. Back\n";
