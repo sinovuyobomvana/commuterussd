@@ -23,16 +23,14 @@ if ($text == "") {
     $response .= "1. CY359186\n";
     $response .= "0. Back";
     
-    if($userResponse == "XYZ123")
-    {
-        $response = "CON You have selected ".$userResponse." as your taxi from Njoli to Greenacres.
-        Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
-        $response .= "1. Confirm\n";
-        $response .= "0. Back\n";
-    }
-
-    
 } 
+if($userResponse == "XYZ123")
+{
+    $response = "CON You have selected ".$userResponse." as your taxi from Njoli to Greenacres.
+    Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
+    $response .= "1. Confirm\n";
+    $response .= "0. Back\n";
+}
 
 // else if($text == "1*1") { 
 //     // This is a second level response where the user selected 1 in the first instance
