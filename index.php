@@ -46,16 +46,24 @@ switch ($text) {
              
         } 
             break;
+        // default:
+        //     $response .= "END Network Issue, please try again later!";
+        //     break;
+    }
+    switch ($variable) {
+        case 'value':
+            if($text == "1*XYZ123*1") { 
+        
+               $response .= "END Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE! Visit your nearest SHOPRITE store and ENTER!";
+            } 
+            break;
+        
         default:
-            $response .= "END Network Issue, please try again later!";
+            # code...
             break;
     }
-    
-        
-        // if($text == "1*XYZ123*1") { 
-        
-        //      $response .= "END Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE! Visit your nearest SHOPRITE store and ENTER!";
-        // } 
+      
+
        
     
 
