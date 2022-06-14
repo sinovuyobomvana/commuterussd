@@ -4,7 +4,11 @@ $sessionId   = $_POST["sessionId"];
 $serviceCode = $_POST["serviceCode"];
 $phoneNumber = $_POST["phoneNumber"];
 $text        = $_POST["text"];
-$code        = $_POST["code"];
+
+//3. Explode the text to get the value of the latest interaction - think 1*1
+$textArray=explode('*', $text);
+$userResponse=trim(end($textArray));
+
 
 if ($text == "") {
     // This is the first request. Note how we start the response with CON
@@ -22,7 +26,7 @@ if ($text == "") {
     
 } else if($text == "1*1" || $text !== "") { 
     // This is a second level response where the user selected 1 in the first instance
-     $response = "CON You have selected CY359186 as your taxi from Njoli to Greenacres.
+     $response = "CON You have selected ".$userResponse." as your taxi from Njoli to Greenacres.
      Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
      $response .= "1. Confirm\n";
      $response .= "0. Back\n";
