@@ -9,6 +9,9 @@ $text        = $_POST["text"];
 $textArray=explode('*', $text);
 $userResponse=trim(end($textArray));
 
+$step = 0;
+$step = count($textArray);
+
 
 switch ($text) {
     case '':
@@ -35,11 +38,11 @@ switch ($text) {
     switch ($userResponse) {
         case 'XYZ123':
           if($userResponse == "XYZ123"){    
-            
+
                 $response = "CON You have selected ".$userResponse." as your taxi from Njoli to Greenacres.
                 Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
                 $response .= "1. Confirm\n";
-                $response .= "0. Back\n";       
+                $response .= "0. Back\n".$step;       
            } 
             break;
         // default:
