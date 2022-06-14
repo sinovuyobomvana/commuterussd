@@ -31,7 +31,7 @@ if($userResponse == "XYZ123")
     $response .= "1. Confirm\n";
     $response .= "0. Back\n";
      
-    $level = 1;
+    $level = "1";
 
 } 
 if($text == "1" && $level == "1") { 
