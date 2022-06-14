@@ -50,7 +50,7 @@ switch ($text) {
         //     $response .= "END Network Issue, please try again later!";
         //     break;
     }
-    switch ($variable) {
+    switch ($text) {
         case 'value':
             if($text == "1*XYZ123*1") { 
         
@@ -59,8 +59,8 @@ switch ($text) {
             break;
         
         default:
-            # code...
-            break;
+         $response .= "END Network Issue, please try again later!";
+         break;
     }
       
 
