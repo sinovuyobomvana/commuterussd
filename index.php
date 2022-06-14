@@ -31,17 +31,10 @@ if($userResponse == "XYZ123")
     $response .= "1. Confirm\n";
     $response .= "0. Back\n";
      
-    
-
 } 
 if($text == "1*XYZ123*1") { 
-    // This is a second level response where the user selected 1 in the first instance
-     $response = "CON You have selected 123456 as your taxi from Njoli to Greenacres.
-     Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
-     $response .= "1. Confirm\n";
-     $response .= "0. Back\n";
-    // This is a terminal request. Note how we start the response with END
-  //  $response = "END Your account number is ".$accountNumber;
+
+     $response .= "END Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE! Visit your nearest SHOPRITE store and ENTER!";
 } 
 
 //else if($text == "1*1*1") { 
