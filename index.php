@@ -33,7 +33,8 @@ if($userResponse == "XYZ123")
      
     $level = 1;
 
-} else if($text == "1" && $level == "1") { 
+} 
+if($text == "1" && $level == "1") { 
     // This is a second level response where the user selected 1 in the first instance
      $response = "CON You have selected 123456 as your taxi from Njoli to Greenacres.
      Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
