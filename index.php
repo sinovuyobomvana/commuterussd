@@ -29,10 +29,9 @@ switch ($text) {
         } 
         break;
         
-    case 'value':
-        # code...
-        break;
-        if($userResponse == "XYZ123")
+    switch ($userResponse) {
+        case 'XYZ123':
+            if($userResponse == "XYZ123")
         {
             $response = "CON You have selected ".$userResponse." as your taxi from Njoli to Greenacres.
             Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
@@ -40,6 +39,10 @@ switch ($text) {
             $response .= "0. Back\n";
              
         } 
+            break;
+            
+    }
+        
         if($text == "1*XYZ123*1") { 
         
              $response .= "END Payment successful. Win your share of R4 million in INSTANT cash and airtime with SHOPRITE! Visit your nearest SHOPRITE store and ENTER!";
