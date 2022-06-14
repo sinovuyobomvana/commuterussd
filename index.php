@@ -34,7 +34,7 @@ if($userResponse == "XYZ123")
     
 
 } 
-if("1*".$userResponse."*1*1") { 
+if("1*".$userResponse."*1*2") { 
     // This is a second level response where the user selected 1 in the first instance
      $response = "CON You have selected 123456 as your taxi from Njoli to Greenacres.
      Please note that R10 will be deducted from your TeksiPay wallet.\n\n";
