@@ -58,9 +58,9 @@ switch ($text) {
             } 
             break;
         
-        default:
-         $response .= "END Network Issue, please try again later!";
-         break;
+        // default:
+        //  $response .= "END Network Issue, please try again later!";
+        //  break;
     }
       
 
